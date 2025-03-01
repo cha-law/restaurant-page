@@ -79,3 +79,7 @@ nav,
     transition: 0.5s;
     cursor: pointer;
 }
+
+.activated {
+    font-weight: 700;
+}

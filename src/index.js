@@ -16,6 +16,16 @@ function removeContent() {
     })
 };
 
+function removeButtonFontWeight() {
+    const navButtons = document.querySelectorAll(".nav-buttons > *");
+
+    navButtons.forEach((button) => {
+        if (button.classList.contains("activated")) {
+            button.classList.toggle("activated");
+        }
+    })
+}
+
 // Add event listeners for each nav button
 
 const homeButton = document.querySelector("#nav-home");
@@ -28,6 +38,10 @@ homeButton.addEventListener(("click"), () => {
     removeContent();
     homePage();
     activePage = "home";
+
+    // Make the nav button bold
+    removeButtonFontWeight();
+    homeButton.classList.toggle("activated");
 });
 
 
@@ -41,6 +55,10 @@ menuButton.addEventListener(("click"), () => {
     removeContent();
     menuPage();
     activePage = "menu";
+
+    // Make the nav button bold
+    removeButtonFontWeight();
+    menuButton.classList.toggle("activated");
 });
 
 
@@ -54,6 +72,10 @@ tableButton.addEventListener(("click"), () => {
     removeContent();
     tablePage();
     activePage = "table";
+
+    // Make the nav button bold
+    removeButtonFontWeight();
+    tableButton.classList.toggle("activated");
 });
 
 
@@ -67,6 +89,10 @@ contactButton.addEventListener(("click"), () => {
     removeContent();
     contactPage();
     activePage = "contact";
+
+    // Make the nav button bold
+    removeButtonFontWeight();
+    contactButton.classList.toggle("activated");
 });
 
 // Initialize by creating the home page
