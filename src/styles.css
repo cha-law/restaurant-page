@@ -61,6 +61,11 @@ nav,
     margin-bottom: 8px;
 }
 
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+}
+
 .hero-wrapper button {
     padding: 8px;
     border: none;
