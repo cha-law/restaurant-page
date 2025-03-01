@@ -9,6 +9,10 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+nav,
+.hero-wrapper {
     padding: 36px 48px;
 }
 
@@ -28,5 +32,45 @@ nav {
 .nav-buttons > button:hover {
     transition: 0.2s;
     background-color: rgb(241, 241, 241);
+    cursor: pointer;
+}
+
+.hero-wrapper {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 12px;
+   background: url(./assets/images/pexels-chanwalrus-941861.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   height: 700px;
+}
+
+.hero-wrapper p,
+.hero-wrapper h1 {
+    color: white;
+}
+
+.hero-wrapper h1 {
+    font-size: 3rem;
+}
+
+.hero-wrapper p {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.hero-wrapper button {
+    padding: 8px;
+    border: none;
+    background-color: rgba(176, 189, 230, 0.65);
+    font-size: 1rem;
+    transition: 0.5s;
+}
+
+.hero-wrapper button:hover {
+    background-color: rgba(176, 189, 230);
+    transition: 0.5s;
     cursor: pointer;
 }
